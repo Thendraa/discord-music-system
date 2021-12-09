@@ -1,0 +1,69 @@
+{
+  "_from": "discord-music-system",
+  "_id": "discord-music-system@3.3.15",
+  "_inBundle": false,
+  "_integrity": "sha512-QX2Ooxnr5w4Qwps+51UQIEIeF70OZNFz0FMmOukTkkd+yHjwHrDivR0wP7N29wzRYumNsuCSkyBplnv1rOCECA==",
+  "_location": "/discord-music-system",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "discord-music-system",
+    "name": "discord-music-system",
+    "escapedName": "discord-music-system",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/discord-music-system/-/discord-music-system-3.3.15.tgz",
+  "_shasum": "c2f209bb287caf02ce171b83e7422ed90883a7a6",
+  "_spec": "discord-music-system",
+  "_where": "C:\\Users\\Canberk\\Desktop\\Verse",
+  "author": {
+    "name": "RemyK#3876"
+  },
+  "bugs": {
+    "url": "https://github.com/RemyK888/discord-music-system/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@discordjs/opus": "^0.5.0",
+    "discord.js": "^12.5.3",
+    "ffmpeg-static": "^4.3.0",
+    "lyrics-finder": "^21.7.0",
+    "popyt": "^5.0.0",
+    "ytdl-core-discord": "^1.3.0",
+    "ytpl": "^2.2.0"
+  },
+  "deprecated": false,
+  "description": "A very simple and powerful music module for Discord bots. Control your music with reactions. NEW: language translation!",
+  "directories": {
+    "example": "example"
+  },
+  "homepage": "https://github.com/RemyK888/discord-music-system#readme",
+  "keywords": [
+    "music",
+    "discord",
+    "youtube",
+    "player",
+    "remyk",
+    "bot",
+    "discordjs",
+    "javascript"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "discord-music-system",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RemyK888/discord-music-system.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "3.3.15"
+}

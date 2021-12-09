@@ -1,0 +1,62 @@
+{
+    "messages": {
+        "noPrivateMessages": "Özel mesajlara cevap vermiyorum.",
+        "voiceChannelNeeded": "Bu komutu kullanmak için bir ses kanalında olmanız gerekir.",
+        "cannotConnect": "Ses kanalınıza bağlanamıyorum, uygun izinlere sahip olduğumdan emin olun!",
+        "noArgs": "Bir terim girmelisin",
+        "sameVoiceChannel": "Müzik dinleyebilmek için bot ile aynı ses kanalında olmanız gerekir.",
+        "nothingPlaying": "Şuanda birşey çalmıyor",
+        "noMoreSongs": "Çalma listesinde başka şarkı yok.",
+        "volBeetween": "Ses seviyesi `0` ile `100` arasında bir sayı olmalıdır!",
+        "validNumberPosition": "Ses seviyesi `0`'dan yüksek olmalıdır.",
+        "couldNotBeFound": "Bu ses bulunamadı.",
+        "restrictedOrNotFound": "Bu şarkı kısıtlanmış veya bulunamadı!",
+        "hasBeenAdded": "Sıraya eklendi.",
+        "errorWhileParsingVideo": "Video aranırken bir hata oluştu.",
+        "errorWhileParsingPlaylist": "Çalma listesi şarkıları ayrıştırılırken bir hata oluştu."
+    },
+    "embeds": {
+        "nowPlaying": {
+            "title": "🎵 Şimdi Çalıyor",
+            "remainingTime": "Süre:"
+        },
+        "skipSong": {
+            "askedBy": "Tarafından İstendi",
+            "beenSkipped": "geçildi"
+        },
+        "volumeEmbed": {
+            "title": "🔊 Ses Seviyesi",
+            "changedFrom": "Seviyeden"
+        },
+        "pauseEmbed": {
+            "title": "Verse Music",
+            "description": "**⏸ Şarkı Durduruldu.**",
+            "askedBy": "Tarafında İstendi"
+        },
+        "resumeEmbed": {
+            "title": "Verse Music",
+            "description": "**▶ Şarkı Devam Ediyor.**",
+            "askedBy": "Tarafından İstendi"
+        },
+        "removeEmbed": {
+            "title": "🚫 Çalma Listesinden Silindi",
+            "removedBy": "🔎 Silen"
+        },
+        "errorEmbed": {
+            "title": "Hata ile karşılaşıldı lütfen Thendra#0409 ile iletişime geçiniz!"
+        },
+        "playEmbed": {
+            "addedBy": "🔎 Eklendi"
+        },
+        "queueEmbed": {
+            "queue": " Sıra"
+        },
+        "addEmbed": {
+            "playlist": "Çalma Listesi",
+            "hasBeenAdded": "Sıraya Eklendi."
+        }
+    },
+    "presence": {
+        "nothing": "🎵 Boş"
+    }
+}

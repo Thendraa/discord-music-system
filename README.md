@@ -68,13 +68,13 @@ client.login('token'); // Botun aktif olması için token, Bu siteden bulabilirs
 
 ## 🚀 Ek
 
-**Modül RemyK#3876'ya Aittir. Türkçeleştirme Thendra#0409 Tarafından Yapıldı.**
+**Modül RemyK#3876'ya Aittir. Türkçeleştirme thendra inş#6816 Tarafından Yapıldı.**
 
 *Not: Bu modül Discord veya YouTube ile bağlantılı değildir.*
 
-Herhangi bir sorununuz olursa iletişime geçebilirsiniz: `Thendra#0409`.
+Herhangi bir sorununuz olursa iletişime geçebilirsiniz: `thendra inş#6816`.
 
 <a href="https://discord.gg/mRNurgF87h"><img src="https://invidget.switchblade.xyz/mRNurgF87h"></a>
 
 
-## **made by Thendra**
+## **Made by Thendra**

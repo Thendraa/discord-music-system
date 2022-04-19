@@ -74,7 +74,7 @@ client.login('token'); // Botun aktif olması için token, Bu siteden bulabilirs
 
 Herhangi bir sorununuz olursa iletişime geçebilirsiniz: `thendra inş#6816`.
 
-<a href="https://discord.gg/mRNurgF87h"><img src="https://invidget.switchblade.xyz/mRNurgF87h"></a>
+<a href="https://discord.gg/thecamping"><img src="https://invidget.switchblade.xyz/thecamping"></a>
 
 
 ## **Made by Thendra**

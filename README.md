@@ -68,13 +68,13 @@ client.login('token'); // Botun aktif olması için token, Bu siteden bulabilirs
 
 ## 🚀 Ek
 
-**Modül RemyK#3876'ya Aittir. Türkçeleştirme thendra inş#6816 Tarafından Yapıldı.**
+**Modül RemyK#3876'ya Aittir. Türkçeleştirme curwels inş#6816 Tarafından Yapıldı.**
 
 *Not: Bu modül Discord veya YouTube ile bağlantılı değildir.*
 
 Herhangi bir sorununuz olursa iletişime geçebilirsiniz: `thendra inş#6816`.
 
-<a href="https://discord.gg/thecamping"><img src="https://invidget.switchblade.xyz/thecamping"></a>
+<a href="https://discord.gg/6MuTY4j6Qt"><img src="https://invidget.switchblade.xyz/6MuTY4j6Qt"></a>
 
 
 ## **Made by Thendra**

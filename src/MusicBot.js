@@ -26,21 +26,21 @@ class MusicBot {
          * @ignore
          * @private
          */
-        this.errorMsg = '\x1b[33m> [Thendra Music] \x1b[31mHata: \x1b[37m ';
+        this.errorMsg = '\x1b[33m> [Curwels Music] \x1b[31mHata: \x1b[37m ';
 
         /**
          * İç hata mesajı
          * @ignore
          * @private
          */
-        this.interErrorMsg = '\x1b[33m> [Thendra Music] \x1b[31mİç Hata: \x1b[37m ';
+        this.interErrorMsg = '\x1b[33m> [Curwels Music] \x1b[31mİç Hata: \x1b[37m ';
 
         /**
          * Uyarı mesajı
          * @ignore
          * @private
          */
-        this.warnMsg = '\x1b[33m> [Thendra Music] \x1b[31mUyarı \x1b[37m ';
+        this.warnMsg = '\x1b[33m> [Curwels Music] \x1b[31mUyarı \x1b[37m ';
 
         if (!client) {
             throw new SyntaxError(this.errorMsg + 'Bilinmeyen Client.');
@@ -233,7 +233,7 @@ class MusicBot {
 
             serverQueue.connection.dispatcher.end();
 
-            return message.channel.send(new MessageEmbed().setColor('RANDOM').setTitle(`Şarkı Geçildi! | Thendra Music`, this.client.user.displayAvatarURL()).setDescription(`[**${serverQueue.songs[0].title}**](${serverQueue.songs[0].url})`).setFooter(`Thendra Music | ${message.author.username} Tarafından İstendi`, this.client.user.displayAvatarURL()).setThumbnail(serverQueue.songs[0].thumbnailUrl).setTimestamp())
+            return message.channel.send(new MessageEmbed().setColor('RANDOM').setTitle(`Şarkı Geçildi! | Curwels Music`, this.client.user.displayAvatarURL()).setDescription(`[**${serverQueue.songs[0].title}**](${serverQueue.songs[0].url})`).setFooter(`Curwels Music | ${message.author.username} Tarafından İstendi`, this.client.user.displayAvatarURL()).setThumbnail(serverQueue.songs[0].thumbnailUrl).setTimestamp())
         }
         // Sıra komutu
         else if(message.content === this.prefix + 'liste' || message.content === this.prefix + 'sıra') {
@@ -271,7 +271,7 @@ class MusicBot {
 
             const volumeNumber = parseInt(args, 10);
             if (!isNaN(volumeNumber) && (volumeNumber >= 0 && volumeNumber <= 100)) {
-                message.channel.send(new MessageEmbed().setColor('RANDOM').setTitle(`Ses Seviyesi Ayarlandı! | Thendra Music`, this.client.user.displayAvatarURL()).setDescription(`\`${serverQueue.volume * 100}\` Seviyeden \`${volumeNumber}\`'e geçildi`).setFooter(`Thendra Music | ${message.author.username} Tarafından İstendi`, this.client.user.displayAvatarURL()));
+                message.channel.send(new MessageEmbed().setColor('RANDOM').setTitle(`Ses Seviyesi Ayarlandı! | Curwels Music`, this.client.user.displayAvatarURL()).setDescription(`\`${serverQueue.volume * 100}\` Seviyeden \`${volumeNumber}\`'e geçildi`).setFooter(`Curwels Music | ${message.author.username} Tarafından İstendi`, this.client.user.displayAvatarURL()));
                 serverQueue.volume = volumeNumber / 100;
                 if (serverQueue.connection.dispatcher) {
                     serverQueue.connection.dispatcher.setVolumeLogarithmic(serverQueue.volume);
@@ -297,7 +297,7 @@ class MusicBot {
             if (serverQueue && serverQueue.playing) {
                 serverQueue.playing = false;
                 serverQueue.connection.dispatcher.pause();
-                return message.channel.send(new MessageEmbed().setTitle(`Şarkı Durduruldu! | Thendra Music`, this.client.user.displayAvatarURL()).setColor('RANDOM').setDescription(`[**${serverQueue.songs[0].title}**](${serverQueue.songs[0].url})`).setTimestamp().setThumbnail(serverQueue.songs[0].thumbnailUrl).setFooter(`Thendra Music | ${message.author.username} Tarafından İstendi`, this.client.user.displayAvatarURL()));
+                return message.channel.send(new MessageEmbed().setTitle(`Şarkı Durduruldu! | Curwels Music`, this.client.user.displayAvatarURL()).setColor('RANDOM').setDescription(`[**${serverQueue.songs[0].title}**](${serverQueue.songs[0].url})`).setTimestamp().setThumbnail(serverQueue.songs[0].thumbnailUrl).setFooter(`Curwels Music | ${message.author.username} Tarafından İstendi`, this.client.user.displayAvatarURL()));
             };   
         }
         // Devam komutu
@@ -317,7 +317,7 @@ class MusicBot {
             if (serverQueue && !serverQueue.playing) {
                 serverQueue.playing = true;
                 serverQueue.connection.dispatcher.resume();
-                return message.channel.send(new MessageEmbed().setTitle(`Şarkı Devam Ediyor | Thendra Music`, this.client.user.displayAvatarURL()).setColor('RANDOM').setThumbnail(serverQueue.songs[0].thumbnailUrl).setDescription(`[**${serverQueue.songs[0].title}**](${serverQueue.songs[0].url})`).setTimestamp().setFooter(`Thendra Music | ${message.author.tag} Tarafından İstendi`, this.client.user.displayAvatarURL()));
+                return message.channel.send(new MessageEmbed().setTitle(`Şarkı Devam Ediyor | Curwels Music`, this.client.user.displayAvatarURL()).setColor('RANDOM').setThumbnail(serverQueue.songs[0].thumbnailUrl).setDescription(`[**${serverQueue.songs[0].title}**](${serverQueue.songs[0].url})`).setTimestamp().setFooter(`Curwels Music | ${message.author.tag} Tarafından İstendi`, this.client.user.displayAvatarURL()));
             }; 
         }
         // Sil komutu
@@ -340,7 +340,7 @@ class MusicBot {
 
             const index = parseInt(args, 10);
             if (!isNaN(index) && index >= 1 && serverQueue.songs.length > index) {
-                message.channel.send(new MessageEmbed().setTitle(`Şarkı Listeden Silindi! | Thendra Music`, this.client.user.displayAvatarURL()).setColor('RANDOM').setDescription(`[**${serverQueue.songs[index].title}**](${serverQueue.songs[index].url})`).addField(`İsimli Şarkı Listeden Çıkarıldı!`).setFooter(`Thendra Music | ${message.author.username} Tarafından İstendi`, this.client.user.displayAvatarURL()));
+                message.channel.send(new MessageEmbed().setTitle(`Şarkı Listeden Silindi! | Curwels Music`, this.client.user.displayAvatarURL()).setColor('RANDOM').setDescription(`[**${serverQueue.songs[index].title}**](${serverQueue.songs[index].url})`).addField(`İsimli Şarkı Listeden Çıkarıldı!`).setFooter(`Curwels Music | ${message.author.username} Tarafından İstendi`, this.client.user.displayAvatarURL()));
                 serverQueue.songs.splice(index, 1);
             } else {
                 this.sendErrorEmbed(this.language.messages.validNumberPosition, message);
@@ -468,7 +468,7 @@ class MusicBot {
         const song = { id: songInfo.videoDetails.video_id, title: songInfo.videoDetails.title, url: songInfo.videoDetails.video_url, author: songInfo.videoDetails.author.name, authorUrl: songInfo.videoDetails.author.channel_url, duration: songInfo.videoDetails.lengthSeconds, thumbnailUrl: songInfo.player_response.videoDetails.thumbnail.thumbnails.pop().url, published: songInfo.videoDetails.publishDate, views: songInfo.player_response.videoDetails.viewCount };
         if (serverQueue) {
             await serverQueue.songs.push(song);
-           return await message.channel.send(new MessageEmbed().setColor('RANDOM').setTimestamp().setThumbnail(song.thumbnailUrl).setTitle(`Oynatılıyor! | Thendra Music`, this.client.user.displayAvatarURL()).setDescription(`[**${song.title}**](${song.url})`).setFooter(`Thendra Music | ${message.author.username} Tarafından İstendi`, this.client.user.displayAvatarURL()));
+           return await message.channel.send(new MessageEmbed().setColor('RANDOM').setTimestamp().setThumbnail(song.thumbnailUrl).setTitle(`Oynatılıyor! | Curwels Music`, this.client.user.displayAvatarURL()).setDescription(`[**${song.title}**](${song.url})`).setFooter(`Curwels Music | ${message.author.username} Tarafından İstendi`, this.client.user.displayAvatarURL()));
         };
 
         const queueConstruct = {
@@ -519,11 +519,11 @@ class MusicBot {
         if (!serverQueue) {
             //this.updateClientPresence(message);
             var çalanEmb = new MessageEmbed()
-            .setTitle(`Oynatılıyor! | Thendra Music`, this.client.user.displayAvatarURL())
+            .setTitle(`Oynatılıyor! | Curwels Music`, this.client.user.displayAvatarURL())
             .setDescription(`[**${song.title}**](${song.url})`)
             .setThumbnail(song.thumbnailUrl)
             .setTimestamp()
-            .setFooter(`Thendra Music | ${message.author.username} Tarafından İstendi`, this.client.user.displayAvatarURL())
+            .setFooter(`Curwels Music | ${message.author.username} Tarafından İstendi`, this.client.user.displayAvatarURL())
             .setColor('RANDOM')
             queue.textChannel.send(çalanEmb)
         };
@@ -616,7 +616,7 @@ class MusicBot {
 
             const song = { id: songInfo.videoDetails.video_id, title: songInfo.videoDetails.title, url: songInfo.videoDetails.video_url, author: songInfo.videoDetails.author.name, authorUrl: songInfo.videoDetails.author.channel_url, duration: songInfo.videoDetails.lengthSeconds, thumbnailUrl: songInfo.player_response.videoDetails.thumbnail.thumbnails.pop().url, published: songInfo.videoDetails.publishDate, views: songInfo.player_response.videoDetails.viewCount };
             serverQueue.songs.push(song);
-            return await message.channel.send(new MessageEmbed().setColor('RANDOM').setTimestamp().setTitle(`Şarkı Sıraya Eklendi | Thendra Music`, this.client.user.displayAvatarURL()).setThumbnail(song.thumbnailUrl).setDescription(`[**${song.title}**](${song.url})`).setFooter(`Thendra Music | ${message.author.tag} Tarafından İstendi`, this.client.user.displayAvatarURL()));
+            return await message.channel.send(new MessageEmbed().setColor('RANDOM').setTimestamp().setTitle(`Şarkı Sıraya Eklendi | Curwels Music`, this.client.user.displayAvatarURL()).setThumbnail(song.thumbnailUrl).setDescription(`[**${song.title}**](${song.url})`).setFooter(`Curwels Music | ${message.author.tag} Tarafından İstendi`, this.client.user.displayAvatarURL()));
         } else {
             const songInfo = await ytdl.getInfo(url);
             if (!songInfo) {
@@ -680,7 +680,7 @@ class MusicBot {
                         playing: true,
                     };
                     if (serverQueue && serverQueue.playing) {
-                        message.channel.send(new MessageEmbed().setColor('RANDOM').setTimestamp().setThumbnail(playlist.items[0].thumbnail).setTitle(`Çalma Listesi Oynatılıyor! | Thendra Music`, this.client.user.displayAvatarURL()).setDescription(`[**${playlist.title}**](${playlist.url})`).setFooter(`Thendra Music | ${message.author.username} Tarafından İstendi`, this.client.user.displayAvatarURL()).setTimestamp());
+                        message.channel.send(new MessageEmbed().setColor('RANDOM').setTimestamp().setThumbnail(playlist.items[0].thumbnail).setTitle(`Çalma Listesi Oynatılıyor! | Curwels Music`, this.client.user.displayAvatarURL()).setDescription(`[**${playlist.title}**](${playlist.url})`).setFooter(`Curwels Music | ${message.author.username} Tarafından İstendi`, this.client.user.displayAvatarURL()).setTimestamp());
                     };
                     (playlist.items.map(async (i) => {
                         if (serverQueue && serverQueue.playing === true) {

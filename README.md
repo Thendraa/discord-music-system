@@ -2,7 +2,7 @@
 
 ## 🔩 Kurulum
 ```
-$ npm install discord-music-system-tr
+$ npm install discord-js-v12-music-system-tr
 ```
 
 ## 💻 Örnek
